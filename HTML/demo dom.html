@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO DOM</title>
+</head>
+<body>
+<h1  id="heading1"> ps muon tong khu neymar</h1>
+<p id="paragraph1">neymar hien van con hop dong voi psg den nam 2025
+</p>
+<button type="button" onclick="clickMe()">Click me</button>
+<ul id="list"></ul>
+<button type="button" onclick="showList()">Show list</button>
+
+<h1>
+    <span id="min">10</span>:<span id="sec">00</span>
+</h1>
+<button type="button" onclick="timer()">Start timer</button>
+<script type="text/javascript">
+    var time = {
+        min:10,
+        sec:0
+    }
+    function timer() {
+        setInterval(function (){
+            var minSpan = document.getElementById("min");
+            var secSpan = document.getElementById("sec");
+            minSpan.innerText = time.min;
+            secSpan.innerText = time.sec;
+            time.sec--;
+            if (time.sec<0){
+                time.sec = 59;
+                time.min--
+            }
+            if (time.min<0){
+                clearInterval(tm);
+            }
+        },1000)
+    }
+    function clickMe() {
+        var h1obj = document.getElementById("heading1");
+        h1obj.style.color = "red";
+        h1obj.style.backgroundColor = "yellow";
+        h1obj.innerText = "Xin chao cac ban";
+        h1obj.innerHTML = "<i>hello world</i>";
+    }
+    function showList(){
+        var sinhvien =[
+            name:"nguyen van an",
+            age:18
+        },
+            {
+                name:"Nguyen van b",
+                age:19
+            },
+    ];
+        var ul0bj = document.getElementById("list");
+        var xyzHTML = "";
+        for (var i=0;i<sinhvien.length;i++){
+            var xyz = "<li>Name: " + sinhvien[i].name+ "</li>";
+            xyzHTML += xyz;
+    }
+        ul0bj.innerHTML = xyzHTML;
+    }
+</script>
+</body>
+</html>
