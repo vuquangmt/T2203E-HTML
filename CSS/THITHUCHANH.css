@@ -1,0 +1,136 @@
+
+
+a {
+    text-decoration: none;
+}
+a,
+button {
+    cursor: pointer;
+    outline: none;
+    text-align:center;
+    background-color: white;
+}
+.sign-up {
+    font-family: "Times New Roman", Times, serif ;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background-color: green;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up__form {
+    background-color: white;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px 10px rgba(0,0,0,.15);
+}
+.sign-up__content {
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+}
+.sign-up__title {
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.sign-up__inp {
+    outline: none;
+    margin-bottom: 15px;
+    padding: 20px 20px 20px 0;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: font;
+}
+.sign-up__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.sign-up__buttons > * {
+    width: 50%;
+    padding: 20px 15px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+.circle--red {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+}
+.circle--yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    top: 50px;
+    left: 230px;
+}
+.circle--green {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    bottom: 50px;
+    left: 200px;
+    z-index: 2;
+}
+.circle--purple {
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    bottom: -50px;
+    right: -50px;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+}
+.forgot__password {
+    text-align: left;
+    text-transform: uppercase;
+    color: gray;
+    display: inline-block;
+    margin-top: 5px;
+}
+.btn--register {
+    background-color: lightgray;
+    color: gray;
+}
+.btn--signin {
+    background-color: white;
+    color: black;
+
+}
+.btn--Login{
+    text-align: right;
+    text-transform: uppercase;
+    color: green;
+    display: inline-block;
+    margin-top: 5px;
+
+
+
+}
